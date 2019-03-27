@@ -1,2 +1,3 @@
-# Potiguar-Rocket-Design---Eletr-nica
+# Potiguar-Rocket-Design---Eletronica
+
 Acervo de códigos e conteúdos para documentação.
