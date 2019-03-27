@@ -8,8 +8,8 @@
   
  ### 2. METODOLOGIA DE MEDIÇÃO
  
-   Utilizando a célula de carga tipo Z com faixa nominal de medição de 1T e com driver HX711 foi possível realizar as medições através do arduino. A coleta dos dados foram feitas por uma prensa encontrada no laboratório de metais e ensaios mecânicos da Universiade Federal do Rio Grande do Norte (UFRN), onde foi posicionado a célula de carga no modo de compressão da prensa e realizada a calibração de 0 a 200kg. 
- 
+   Utilizando a célula de carga tipo Z com faixa nominal de medição de 1T e com driver HX711 foi possível realizar as medições através do arduino. A coleta dos dados foram feitas por uma prensa encontrada no laboratório de metais e ensaios mecânicos da Universiade Federal do Rio Grande do Norte (UFRN), onde foi posicionado a célula de carga no modo de compressão da prensa e realizada a calibração de 0 a 200kg.
+  O código utilizado para aquisição dos dados encontra-se nesse repositório: https://bit.ly/2HWDN3E, mas para salvar os dados precisa utilizar uma extensão do Excel chamada **PLX-DAQ**: https://bit.ly/2ShGtKX a versão do excel utilizado foi 2013 e o tutorial de como utilizar o PLX encontra-se aqui: https://bit.ly/2HV3DoA. 
 
 
 
