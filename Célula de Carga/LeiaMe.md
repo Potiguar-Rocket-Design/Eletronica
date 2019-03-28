@@ -25,7 +25,7 @@
 
  ###### Fonte: http://www.electronicspro.com.pk/wp-content/uploads/2017/11/hx711-load-cell-amplifier.jpeg
  
-
+ 
   O código utilizado para aquisição dos dados encontra-se nesse repositório: https://bit.ly/2HWDN3E, mas para salvar os dados precisa utilizar uma extensão do Excel chamada **PLX-DAQ**: https://bit.ly/2ShGtKX a versão do excel utilizado foi 2013 e o tutorial de como utilizar o PLX encontra-se aqui: https://bit.ly/2HV3DoA. 
   
   
