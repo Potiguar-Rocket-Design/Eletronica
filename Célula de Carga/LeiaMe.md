@@ -8,7 +8,7 @@
   
  ### 2. METODOLOGIA DE MEDIÇÃO
  
-   Utilizando a célula de carga tipo Z, Figura 1, com faixa nominal de medição de 1T e com driver HX711, Figura 2, foi possível realizar as medições através do arduino. A coleta dos dados foram feitas por uma prensa encontrada no laboratório de metais e ensaios mecânicos da Universiade Federal do Rio Grande do Norte (UFRN), onde foi posicionado a célula de carga no modo de compressão da prensa e realizada a calibração de 0 a 200kg.
+   O processo de calibração de uma célula de carga consiste em submete-la a certas variações de esforços conhecidos. Ao aplicar as tensões gerará uma deformaçao que varia a resistência de extensômetro que por meio de um dispositivo que essas variações é possível mapear os valores de um escala até então desconhecida para uma função desses dados. Na calibração, foi utilizado uma célula de carga tipo Z, Figura 1, e um driver HX711, Figura 2, para realizar as medições através de um arduino. O equipamente usado para comprir a célula de carga foi um prensa encontrada no laboratório de metais e ensaios mecânicos da Universiade Federal do Rio Grande do Norte (UFRN), onde foi posicionado a célula de carga no modo de compressão da prensa e realizada a calibração de 0 a 200kg.
    
  ##### Figura 1 - Célula de carga tipo Z
    
