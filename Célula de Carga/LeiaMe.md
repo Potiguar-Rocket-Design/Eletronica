@@ -33,6 +33,7 @@
      F(x) = (-0.0002264 * x) + 1877.7218
      
   F(x) --> Resulta nos peso em kg;
+  
   x    --> Os valores da célula obtido pelo arduino
   
   ##### Figura 3 - Resultados da regressão linear da calibração
