@@ -11,7 +11,7 @@ A seguir será feito apresentado como foi arquitetado o aparelho e um manual de 
 O softawe utilizado para o desenvolvimento do projeto foi o Kicad -  http://kicad-pcb.org/, nele foi possível construir o esquemático onde foram feitas as ligações entre os componentes e o projeto da placa de circuito impresso (PCI). A figura 1 mostra-se a visão geral do projeto dividindo
 
 
-* Figura 1 - * Esquemático SADI
+### Figura 1 -  Esquemático SADI
 ![Esquemático - SADI-1](https://user-images.githubusercontent.com/42541528/56308829-977d5f80-611e-11e9-9ec7-5395275f1504.png)
 
 ## CONCLUSÃO
