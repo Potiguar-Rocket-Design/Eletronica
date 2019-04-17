@@ -12,6 +12,7 @@ O softawe utilizado para o desenvolvimento do projeto foi o Kicad -  http://kica
 
 
 ### Figura 1 -  Esquemático SADI
+
 ![Esquemático - SADI-1](https://user-images.githubusercontent.com/42541528/56308829-977d5f80-611e-11e9-9ec7-5395275f1504.png)
 
 ## CONCLUSÃO
