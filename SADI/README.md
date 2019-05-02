@@ -6,7 +6,7 @@ Os testes estáticos de motores necessitavam de um dispositivo capaz de ignitar 
 A seguir será feito apresentado como foi arquitetado o aparelho e um manual de uso para todos os membros da equipe.
 
 
-## DESENVOLVIMENTO
+## CONSTRUÇÃO
 
 O softawe utilizado para o desenvolvimento do projeto foi o Kicad -  http://kicad-pcb.org/, o esquemático onde foram feitas as ligações entre os componentes e o projeto da placa de circuito impresso (PCI). A figura 1 mostra-se a visão geral do projeto dividindo
 
