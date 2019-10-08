@@ -1,24 +1,10 @@
-/*
-  Software serial multple serial test
-
-  Receives from the hardware serial, sends to software serial.
-  Receives from software serial, sends to hardware serial.
-
-  The circuit:
-   RX is digital pin 2 (connect to TX of other device)
-   TX is digital pin 3 (connect to RX of other device)
-
-  created back in the mists of time
-  modified 9 Apr 2012
-  by Tom Igoe
-  based on Mikal Hart's example
-
-  This example code is in the public domain.
-
-*/
 #include <SoftwareSerial.h>
 
 SoftwareSerial nano(2, 3); // RX, TX
+
+
+unsigned i = 10000;
+unsigned start, last = 0;
 
 void setup()
 {
@@ -36,6 +22,17 @@ void setup()
 
 void loop() // run over and over
 {
+
+  start = millis();
+/*
+ if(start - last >= 500){
+
+  i--;
+  nano.println(i);
+  Serial.println(i);
+  last = start;
+ }
+ */
   if (nano.available() > 0) {
   Serial.write(nano.read());
   }
