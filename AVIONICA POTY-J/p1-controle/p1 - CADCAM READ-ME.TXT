@@ -1,0 +1,44 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'aviônica_p1.pdsprj'.
+CADCAM generated at 11:09:51 on sexta-feira, 23 de novembro de 2018.
+
+File List
+---------
+Top Copper              : p1 - CADCAM Top Copper.TXT
+Bottom Copper           : p1 - CADCAM Bottom Copper.TXT
+Top Silk Screen         : p1 - CADCAM Top Silk Screen.TXT
+Bottom Silk Screen      : p1 - CADCAM Bottom Silk Screen.TXT
+Top Solder Resist       : p1 - CADCAM Top Solder Resist.TXT
+Bottom Solder Resist    : p1 - CADCAM Bottom Solder Resist.TXT
+Mechanical 1            : p1 - CADCAM Mechanical 1.TXT
+Drill                   : p1 - CADCAM Drill.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height, C=Chamfer
+
+D10	SQUARE  S=80th                                                            FLASH
+D11	CIRCLE  D=150th                                                           FLASH
+D12	CIRCLE  D=8th                                                             DRAW
+D13	CIRCLE  D=50th                                                            DRAW
+D14	CIRCLE  D=10th                                                            DRAW
+D15	CIRCLE  D=40th                                                            DRAW
+D16	CIRCLE  D=2.5th                                                           DRAW
+D17	SQUARE  S=100th                                                           FLASH
+D18	CIRCLE  D=180th                                                           FLASH
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+T01	40th (0-15)
+T02	130th (0-15)
+
+
+[END OF FILE]
