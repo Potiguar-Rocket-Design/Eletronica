@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ConversorBooster)(type Legacy)(uri "C:/Users/kaike/Desktop/Ignitor/Conversor Booster.lib")(options "")(descr ""))
+  (lib (name Ignitor-rescue)(type Legacy)(uri ${KIPRJMOD}/Ignitor-rescue.lib)(options "")(descr ""))
+)

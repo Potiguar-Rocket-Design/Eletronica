@@ -1,0 +1,57 @@
+Source,C:\Users\kaike\Desktop\Ignitor\Ignitor.sch
+Kicad Rev,Eeschema (5.0.1)-4
+Generated Date,02/03/2019 20:59:59
+
+Title,SISTEMA INTEGRADO IGNIÇÃO E CÉLULA DE CARGA
+Company,POTIGUAR ROCKET DESIGN
+Revision,v4
+Date Issue,2019-03-02
+
+Reference,Value,Library,Library Ref
+K1,RELE 1,Relay,G5LE-1
+K2,RELE 2,Relay,G5LE-1
+D2,DIODE,pspice,DIODE
+D4,DIODE,pspice,DIODE
+Q1,BC337,Transistor_BJT,BC337
+Q2,BC337,Transistor_BJT,BC337
+R3,330R,Device,R
+R5,330R,Device,R
+C1,15000uF,Device,CP
+C2,15000uF,Device,CP
+D3,LED VERMELHO,Device,LED
+R4,330R,Device,R
+D1, LED VERMELHO,Device,LED
+R2,330R,Device,R
+U4,L7805,Regulator_Linear,L7805
+C6,100uF,Device,CP
+C9,10uF,Device,CP
+J4,Jack-DC,Connector,Jack-DC
+U5,AMS1117,Regulator_Linear,AMS1117
+C7,100uF,Device,CP
+C8,10uF,Device,CP
+D5,LED VERDE,Device,LED
+R8,570R,Device,R
+R10,330R,Device,R
+D7,LED VERDE,Device,LED
+R9,330R,Device,R
+D6,LED VERDE,Device,LED
+U1,ESP-12E,Ignitor-rescue,ESP-12E-ESP8266
+R1,10kR,Device,R
+J1,FTDI,Connector,Conn_01x05_Male
+J2,I2C,Connector,Conn_01x03_Male
+U2,HX711,Ignitor-rescue,HX711-HX711
+J3,OUT_IGNITOR,Connector,Conn_01x02_Male
+SW1,ON/OFF,Switch,SW_DPDT_x2
+SW2,ON/OFF,Switch,SW_DPDT_x2
+J5,DB9_LOAD CELL,Connector,DB9_Female
+J6,DESC,Connector,Conn_01x02_Male
+R11,330R,Device,R
+J8,AUX1,Connector,Conn_01x02_Male
+J7,AUX2,Connector,Conn_01x02_Male
+J9,A3,Connector,Conn_01x03_Male
+J10,A4,Connector,Conn_01x03_Male
+R12,10kR,Device,R
+R7,10kR,Device,R
+R6,10kR,Device,R
+SW3,RST,Switch,SW_DIP_x02
+R13,10kR,Device,R
