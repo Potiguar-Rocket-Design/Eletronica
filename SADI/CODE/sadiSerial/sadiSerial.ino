@@ -18,6 +18,8 @@ unsigned long go, last = 0;
 #define  ADDO 19 // 14 Data Out 19
 #define  ADSK 22 // 16 SCK 22
 
+char message[16];
+
 
 // --- Protótipo das Funções Auxiliares ---
 unsigned long ReadCount(); //conversão AD do HX711
@@ -84,10 +86,10 @@ void loop()
 
 if (sadi.available() > 0) {
 
-// https://www.youtube.com/watch?v=ehPOaV066VU
+
 // estudar bit de paridade para comSerial
   for(int i = 0; i < 5; i++){
-    char c = sadi.read();
+    char dados = sadi.read();
   }
   Serial.write();
   }
