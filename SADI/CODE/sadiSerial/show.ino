@@ -10,13 +10,19 @@ void show() {
 
   lcd.setCursor(10, 0);
   lcd.print("kg");
-  tensaoC = analogRead(A0);
+  tensaoC = analogRead(capacitor);
   rt =  map(tensaoC, 0, 840, 0, 100);// 840 é o valor aproximado para correcao da tensao
 
   lcd.setCursor(10, 1);
   lcd.print(rt);
 
+
   Serial.println(rt);
+
+  Wire.beginTransmission(myAdress);
+  Wire.write(rt);
+  // Fecha a transmissão STOP
+  Wire.endTransmission();
 
   if ( rt >= 90) {
     lcd.clear();

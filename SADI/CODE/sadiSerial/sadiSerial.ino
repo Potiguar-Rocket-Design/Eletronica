@@ -1,22 +1,21 @@
 #include <LiquidCrystal_I2C.h>
-#include <Wire.h>
+//#include <Wire.h>
 #include <Adafruit_MLX90614.h>
-#include <SoftwareSerial.h>
-
+#include "Wire.h"
 Adafruit_MLX90614 mlx = Adafruit_MLX90614();
 
 LiquidCrystal_I2C lcd(0x3F, 20, 4); // set the LCD address to 0x27 for a 16 chars and 2 line display
-SoftwareSerial sadi(14, 16); // (RX, TX)
 
 // --- Mapeamento de Hardware ---
 #define  ADDO 19 // 14 Data Out 19
 #define  ADSK 22 // 16 SCK 22
 
+// endereco do modulo slave que pode ser um valor de 0 a 255
+#define myAdress 0x0A
 
-
-int dados[5];
-int chegou = 0;
-int counter = 0;
+#define carregar 13
+#define ignitar 12
+#define capacitor A0
 
 // --- Protótipo das Funções Auxiliares ---
 unsigned long ReadCount(); //conversão AD do HX711
@@ -33,14 +32,19 @@ unsigned long go, last = 0;
 void setup()
 {
   Serial.begin(115200);
-  sadi.begin(9600);
 
+  Wire.begin();
   pinMode(ADDO, INPUT_PULLUP);   //entrada para receber os dados
   pinMode(ADSK, OUTPUT);         //saída para SCK
 
+  pinMode(carregar, OUTPUT);
+  pinMode(ignitar, OUTPUT);
+  pinMode(capacitor, INPUT);
 
+ // Wire.onReceive(receiveEvent);
 
   Serial.println("Comunicação Serial Pronto!");
+  
   mlx.begin();
 
   Serial.println("Sensor de Temperatura MLX90614 Pronto!");
@@ -85,34 +89,6 @@ void setup()
 void loop()
 {
   go = millis();
-
-
-  if (sadi.available())
-  {
-
-    chegou = sadi.read();
-
-    for (int i = 0; i < 5; i++)
-    {
-      dados[i] = chegou & (0x01 << i);
-
-      if (dados[i]) counter += 1; // conta a quantidade de 1 para a paridade
-    }
-
-  }
-
-  bool paridade = dados[4];
-
-  if ( counter % 2 == paridade) {
-
-    sadi.write(10001);
-
-  }
-  else {
-    sadi.write(01110);
-  }
-
-
 
 
 
